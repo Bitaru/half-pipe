@@ -38,7 +38,7 @@ module Rack
 
     def scripts_config
       {
-        source_dir: 'app/scripts',
+        source_dir: 'app/assets/scripts',
         url: '/scripts',
         source_extension: 'js',
         content_type: 'application/javascript',
@@ -48,7 +48,7 @@ module Rack
 
     def bower_js_config
       {
-        source_dir: 'bower_components',
+        source_dir: 'app/assets/bower_components',
         url: '/components',
         source_extension: 'js',
         content_type: 'application/javascript',
@@ -58,7 +58,7 @@ module Rack
 
     def images_config
       {
-        source_dir: 'app/images',
+        source_dir: 'app/assets/images',
         url: '/images',
         compiler: pass_thru_compiler
       }
@@ -76,7 +76,7 @@ module Rack
 
     def sass_config
       {
-        :source_dir => 'app/styles',
+        :source_dir => 'app/assets/styles',
         :url => '/styles',
         sass_options: {
           debug_info: true,
